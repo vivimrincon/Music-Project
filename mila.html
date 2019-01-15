@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "mila.css">
   </head>
   <body>
       
@@ -20,7 +21,20 @@
         <label for="formGroupExampleInput2">Password</label>
         <input type="password"   name = "password" placeholder="Password">
         <input id = "btnSignUp" type = 'button' value = 'Register'/>
-      
+                
+          <!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>This email is already in use, please try another.</p>
+  </div>
+
+</div>
       </div>
     </form>
 
