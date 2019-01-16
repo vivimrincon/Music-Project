@@ -8,8 +8,9 @@ In this project, our team created a music app that pulls lyrics on request and p
 * [Bootstrap](https://getbootstrap.com/) -Responsive Design
 * [jQuery](https://jquery.com/) -Javacript library
 * [Firebase](https://firebase.google.com/) -BaaS
+* [API]() - Public APIs
 
 ## Contributors
 * Mila ["ukgt"](https://github.com/ukgt) Koyira :woman_technologist:
 * JC ["tthomps1992"](https://github.com/tthomps1992) Thompson :man_technologist:
-*   Viviana ["ttalgihon"](https://github.com/ttalgihon) Rincon :floppy_disk:
+* Viviana ["ttalgihon"](https://github.com/ttalgihon) Rincon :floppy_disk:
