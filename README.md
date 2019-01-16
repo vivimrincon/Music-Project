@@ -1,5 +1,5 @@
 # Music-Project
-In this project, our team created a music app that pulls lyrics on request and plays the song accompanying them.  We created a solution to searching for music & music lyrics more intuitive. Using tools like Firebase and Public APIs we were able to allow users to sign in and explore the music data. The inspiration was taken from music services such as Spotify, Apple Music, and Bandcamp.
+In this project, our team created a music app that pulls lyrics on request and plays the song accompanying them.  We created a solution for searching music & music lyrics more intuitive. Using tools like Firebase and Public APIs we were able to allow users to sign in and explore the music data. The inspiration was taken from music services such as Spotify, Apple Music, and Bandcamp.
 
 ## Built With
 * [HTML5](https://www.w3schools.com/html/default.asp) -Web page content markup
