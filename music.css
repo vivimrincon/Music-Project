@@ -1,0 +1,12 @@
+p { 
+font-family: 'Pacifico', cursive;
+text-align: center;
+color: azure;
+font-size: 100px;  
+}
+.loginP {
+color: coral;
+}
+.log-form-group {
+width: 50%;
+}
