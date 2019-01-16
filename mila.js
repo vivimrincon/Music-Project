@@ -13,11 +13,11 @@
           })
           .catch(function (error) {
              console.log('Error', error);
-            // error.message
-            console.log("message", error.message);
+             // error.message
+             console.log(error.message);
              modal();
 
-             $('#exampleModalLabel').html( error.message);
+             $('#exampleModalLabel').html(error.message);
           });
 
        function modal() {
