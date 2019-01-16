@@ -1,8 +1,17 @@
-h1 { 
+p { 
     font-family: 'Pacifico', cursive;
-    float: bottom;
+    
     text-align: center;
     color: azure;
     font-size: 100px;
     
+}
+
+.loginP {
+    color: coral;
+}
+
+.log-form-group {
+    width: 50%;
+
 }
