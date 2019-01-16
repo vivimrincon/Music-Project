@@ -10,7 +10,13 @@ In this project, our team created a music app that pulls lyrics on request and p
 * [Firebase](https://firebase.google.com/) -BaaS
 * [API]() - Public APIs
 
-## Contributors
+## Authors
 * Mila ["ukgt"](https://github.com/ukgt) Koyira :woman_technologist:
 * JC ["tthomps1992"](https://github.com/tthomps1992) Thompson :man_technologist:
 * Viviana ["ttalgihon"](https://github.com/ttalgihon) Rincon :floppy_disk:
+
+### Knowledge Contributors
+This is a list contributors who gave their knowledge and time into the creation of the project.
+* [Esterling Accime](https://www.linkedin.com/in/esterling-accime-324a4181/)
+* [James Lemons](https://www.linkedin.com/in/james-lemons-pushforward/)
+* [Chris Yang](https://www.linkedin.com/in/chrisyang907/)
