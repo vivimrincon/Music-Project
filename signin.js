@@ -18,10 +18,10 @@ firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error
    });
    firebase.auth().onAuthStateChanged(function(user) {
      if (user) {
-        console.log("signed in")
+        console.log("signed in");
        // User is signed in.
      } else {
-        console.log("signed out")
+        console.log("signed out");
        // No user is signed in.
      }
    });
