@@ -31,6 +31,6 @@ $(document).ready(function () {
 
   function modal() {
     $("#exampleModal").modal("show")
- }
- 
-   });
+  }
+
+});
