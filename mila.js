@@ -6,7 +6,6 @@
        console.log('Email', email);
        console.log('Password', password);
 
-
        firebase.auth().createUserWithEmailAndPassword(email, password)
           .then(function (data) {
              console.log('Data', data);
@@ -24,7 +23,7 @@
           $("#exampleModal").modal("show")
        }
 
-        $('form').get(0).reset();
+       $('form').get(0).reset();
 
        dataRef().ref().push({
           email: email,
