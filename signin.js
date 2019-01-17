@@ -28,8 +28,8 @@ $(document).ready(function () {
 
 
 
-  //  $("#btnLogIn").on("click", function(){
-  //   modal.style.display = "block";
+   $("#btnLogIn").on("click", function(){
+    modal.style.display = "block";
   var modal = document.getElementById('myModal');
 
   // Get the button that opens the modal
@@ -54,5 +54,5 @@ $(document).ready(function () {
       modal.style.display = "none";
     }
   };
-
+   });
 });
