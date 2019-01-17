@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- This is the OFFICAL SIGN UP PAGE -->
 
 <head>
+  <title>Sign Up</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-    crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="music.css">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
 </head>
 
+<!-- Top navigation on Sign up/Register page -->
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="musicIndex.html">
-      <img src="images/brand-logo.jpg" height="60px" width="60px" alt="brand"></img></a>
+    <a class="navbar-brand" href="index.html"> <!--directs to homepage-->
+      <img src="images/brand-logo.jpg" height="60px" width="60px" alt="brand"></img>
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -25,7 +29,6 @@
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
-
         <li class="nav-item">
           <a class="nav-link" href="register.html">Sign-Up</a>
         </li>
@@ -35,25 +38,26 @@
       </ul>
     </div>
   </nav>
+  <br><br><br> <!--change later-->
 
-  <br><br><br>
   <div class="container">
     <form>
+      <!--Email Signup/Register Input Bar-->
       <div class="log-form-group">
         <div class="form-row">
-          <div class="col">
-          </div>
-        </div><br>
-        <label for="exampleInputEmail1"></label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-
+          <div class="col"></div>
+        </div>
+        <br> <!--change later-->
+        <label for="register-email"></label>
+        <input type="email" class="form-control" id="register-email" aria-describedby="emailHelp" placeholder="Email">
       </div>
+      <!-- Password Signup/Register Input Bar -->
       <div class="log-form-group">
-        <label for="exampleInputPassword2"></label>
-        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+        <label for="register-password"></label>
+        <input type="password" class="form-control" id="register-password" placeholder="Password">
       </div>
 
-      <br>
+      <br> <!-- Password Login Input Bar -->
 
       <button id = 'btnSignUp' type="submit" class="btn btn-primary">Submit</button>
     </form>
@@ -84,5 +88,20 @@
     <script src= "https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
     <script src = "firebase.js"></script>
     <script type = "text/javascript" src = "mila.js"></script>
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+  </div>
+
+  <!-- Compiled and minified Javascript -->
+  <!-- Javascript MISSING -->
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous">
+  </script>
+  <!-- AJAX -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous">
+  </script>
 </body>
 </html>
