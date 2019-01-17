@@ -10,3 +10,6 @@ color: coral;
 .log-form-group {
 width: 50%;
 }
+#search {
+    float: right;
+}
