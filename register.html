@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
 </head>
-
+  
 <!-- Top navigation on Sign up/Register page -->
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -39,7 +39,7 @@
     </div>
   </nav>
   <br><br><br> <!--change later-->
-
+  
   <div class="container">
     <form>
       <!--Email Signup/Register Input Bar-->
@@ -48,23 +48,21 @@
           <div class="col"></div>
         </div>
         <br> <!--change later-->
-        <label for="register-email"></label>
+        <label for="register-email">Register Email</label>
         <input type="email" class="form-control" id="register-email" aria-describedby="emailHelp" placeholder="Email">
       </div>
       <!-- Password Signup/Register Input Bar -->
       <div class="log-form-group">
-        <label for="register-password"></label>
+        <label for="register-password">Create Password</label>
         <input type="password" class="form-control" id="register-password" placeholder="Password">
       </div>
-
       <br> <!-- Password Login Input Bar -->
-
-      <button id = 'btnSignUp' type="submit" class="btn btn-primary">Submit</button>
+      <button id="btnSignup" type="submit" class="btn btn-primary">Register</button>
     </form>
   </div>
-  </div>
-   <!-- Modal -->
-   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -76,32 +74,26 @@
         
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-         
         </div>
       </div>
     </div>
   </div>
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src= "https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
-    <script src = "firebase.js"></script>
-    <script type = "text/javascript" src = "mila.js"></script>
-      <button type="submit" class="btn btn-primary">Register</button>
-    </form>
-  </div>
+  <!-- Modal End -->
 
   <!-- Compiled and minified Javascript -->
-  <!-- Javascript MISSING -->
-
   <!-- jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous">
+  crossorigin="anonymous">
   </script>
+  <!-- Javascript -->
+  <script type="text/javascript" src="mila.js"></script>
   <!-- AJAX -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous">
+  crossorigin="anonymous">
   </script>
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+  <script src="firebase.js"></script>
 </body>
+
 </html>

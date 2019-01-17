@@ -7,7 +7,8 @@ $(document).ready(function () {
     console.log('Email', email);
     console.log('Password', password);
 
-    firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
+    firebase.auth().signInWithEmailAndPassword(email, password)
+    .catch(function (error) {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
@@ -31,6 +32,6 @@ $(document).ready(function () {
 
   function modal() {
     $("#exampleModal").modal("show")
- }
+  }
  
-   });
+});

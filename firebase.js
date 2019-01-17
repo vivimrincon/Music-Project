@@ -10,4 +10,4 @@ var config = {
 firebase.initializeApp(config);
 
 var dataRef = firebase.database;
-    var auth = firebase.auth;
+var auth = firebase.auth;
