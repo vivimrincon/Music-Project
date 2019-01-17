@@ -23,7 +23,7 @@
           $("#exampleModal").modal("show")
        }
 
-        $('form').get(0).reset();
+       $('form').get(0).reset();
 
        dataRef().ref().push({
           email: email,
