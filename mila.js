@@ -6,7 +6,6 @@
        console.log('Email', email);
        console.log('Password', password);
 
-
        firebase.auth().createUserWithEmailAndPassword(email, password)
           .then(function (data) {
              console.log('Data', data);
