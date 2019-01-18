@@ -10,6 +10,16 @@ color: coral;
 .log-form-group {
 width: 50%;
 }
-#search {
-    float: right;
+
+h2 {
+font-family: 'Pacifico', cursive;
+text-align: center;
+color: azure;
+font-size: 100px;
+
 }
+
+h2.title-on-index {
+    margin-top: 100px;
+}
+
