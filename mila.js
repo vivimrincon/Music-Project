@@ -18,7 +18,7 @@
 
              $('#exampleModalLabel').html(error.message);
           });
-
+         
        function modal() {
           $("#exampleModal").modal("show")
        }
@@ -27,12 +27,16 @@
 
        dataRef().ref().push({
           email: email,
-          password: password
+          password: password,
+          confirm: confirm,
+          firstname: firstname,
+          lastname: lastname
        });
        dataRef().ref().on('child_added', function (addRow) {
           let email = addRow.val().email;
           let password = addRow.val().password;
-
+          let firstname = addRow.val().firstname;
+          let lastname = addRow.val().lastname;
        });
 
 
