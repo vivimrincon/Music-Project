@@ -3,6 +3,8 @@
        event.preventDefault();
        const email = $('input[type = "email"]').val();
        const password = $('input[type = "password"]').val();
+       const firstname = $('input[type = "password"]').val();
+       const lastname = $('input[type = "password"]').val();
        console.log('Email', email);
        console.log('Password', password);
 
@@ -19,7 +21,7 @@
 
              $('#exampleModalLabel').html( error.message);
           });
-
+         
        function modal() {
           $("#exampleModal").modal("show")
        }
@@ -28,12 +30,15 @@
 
        dataRef().ref().push({
           email: email,
-          password: password
+          password: password,
+          firstname: firstname,
+          lastname: lastname
        });
        dataRef().ref().on('child_added', function (addRow) {
           let email = addRow.val().email;
           let password = addRow.val().password;
-
+          let firstname = addRow.val().firstname;
+          let lastname = addRow.val().lastname;
        });
 
 
