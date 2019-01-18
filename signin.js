@@ -6,7 +6,7 @@ $(document).ready(function () {
     const password = $('input[type = "password"]').val();
     console.log('Email', email);
     console.log('Password', password);
-
+    // firebase sign in with email and password and returns error if incorrect
     firebase.auth().signInWithEmailAndPassword(email, password).catch(function (error) {
       // Handle Errors here.
       var errorCode = error.code;
@@ -16,11 +16,9 @@ $(document).ready(function () {
       modal();
       $('#exampleModalLabel').html(error.message);
     });
-
     function modal() {
       $("#exampleModal").modal("show")
     }
-
     firebase.auth().onAuthStateChanged(function (user) {
       if (user) {
         console.log("signed in")
