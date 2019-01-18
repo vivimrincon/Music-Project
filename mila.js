@@ -3,6 +3,8 @@
        event.preventDefault();
        const email = $('input[type = "email"]').val();
        const password = $('input[type = "password"]').val();
+       const firstname = $('input[type = "password"]').val();
+       const lastname = $('input[type = "password"]').val();
        console.log('Email', email);
        console.log('Password', password);
 
@@ -29,7 +31,6 @@
        dataRef().ref().push({
           email: email,
           password: password,
-          confirm: confirm,
           firstname: firstname,
           lastname: lastname
        });
