@@ -3,8 +3,8 @@
        event.preventDefault();
        const email = $('input[type = "email"]').val();
        const password = $('input[type = "password"]').val();
-       const firstname = $('input[type = "password"]').val();
-       const lastname = $('input[type = "password"]').val();
+       const firstname = $('input[type = "firstname"]').val();
+       const lastname = $('input[type = "lastname"]').val();
        console.log('Email', email);
        console.log('Password', password);
 
