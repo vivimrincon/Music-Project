@@ -20,3 +20,20 @@ h2.title-on-index {
     margin-top: 100px;
 }
 
+#cover {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.column {
+    float: right;
+    width: 50%;
+    padding: 3px;
+    text-align: center;
+    opacity: .7;
+    
+  }
+
+
+
