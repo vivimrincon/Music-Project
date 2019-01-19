@@ -8,64 +8,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Compiled and minified CSS -->
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-  crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="music.css">
 </head>
 
-<body background="images/fluid-background.jpg">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body background="images/blue-abstract-background.jpg">
+
+  <!-- this nav tag is size responsive -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <a class="navbar-brand" href="index.html">
       <!--the logo takes the user back to the homepage (index.html)-->
       <img src="images/brand-logo.jpg" height="60px" width="60px" alt="brand"></img>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="register.html">Register</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="login.html">Login</a>
-        </li>
-      </ul>
-    </div>
-    <form id="se  arch" class="nav-link" action="nav-item">
-      <label for="search-engine"></label>
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><i class="search"></i></button>
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="register.html">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="login.html">Login</a>
+      </li>
+    </ul>
+    <!-- search bar and button -->
+    <form class="form-inline my-2 my-lg-0">
+      <input id="searchbar" class="form-control mr-sm-2" type="search" placeholder="Search an artist" aria-label="Search">
+      <button id="searchbtn" class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
     </form>
-  </nav>
-  <div class="row">
-    <div class="col-3">
-      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
-          aria-controls="v-pills-profile" aria-selected="false">Profile</a>
-        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
-          aria-controls="v-pills-messages" aria-selected="false">Music</a>
-        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
-          aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+  </div>
+ </nav>
+ <!-- end of nav tag -->
+
+
+ <!-- Header -->
+ <div class="container">
+   <h2 id="headername" class="title-on-index">Polytonality<h2>
+ </div>
+
+
+  <div id="newdatadisplay" class="container">
+    <div id="newdataimgdisplay" class="col-md"><img src="" height="" alt="" href=""></div>
+  </div>
+ 
+
+ <!-- example image placers -->
+ <div id="loadedhp" class="container">
+    <div class="row">
+      <div class="col-md"> <img src="images/Vantage.jpg" value="Vantage" height="300px" alt="holderPic1"></div>
+      <div class="col-md"> <img src="./images/Kanye-west.jpg" value="Kanye West" height="300px" alt="holderPic2"></div>
+    </div>
+    <div class="row">
+      <div class="col-md"> <img src="images/Anthology_Unusual_Sounds.jpg" value="Unusual Sounds" height="300px" alt="holderPic1"></div>
+      <div class="col-md"> <img src="./images/MF_DOOM.jpg" value="MF DOOM" height="300px" alt="holderPic2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md"> <img src="images/Neon_Impass.jpg" value="Neon Impasse" height="300px" alt="holderPic1"></div>
+        <div class="col-md"> <img src="./images/Beach_house_DC.jpg" value="Beach House" height="300px" alt="holderPic2"></div>
       </div>
-    </div>
+ </div>
 
-    <!-- Header -->
-    <div class="container">
-      <h2 class="title-on-index">Polytonality<h2>
-    </div>
-
-    <!-- Compiled and minified Javascript -->
-    <!-- Javascript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="mila.js"></script>
-    <script src="signin.js"></script>
-    <script src="config.js"></script>
-    <script src="API.js"></script>
-  </body>
+  
+  <!-- Javascript for API -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+  <script src="mila.js"></script>
+  <script src="signin.js"></script>
+  <script src="config.js"></script>
+  <script src="API.js"></script>
+</body>
 
 </html>

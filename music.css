@@ -1,8 +1,10 @@
-body{ 
+body { 
+max-width: 100%;
+max-height: 100%;
 font-family: 'Pacifico', cursive;
 text-align: center;
 color: azure;
-font-size: 50px;  
+font-size: 20px;
 }
 .loginP {
 color: coral;
@@ -10,13 +12,32 @@ color: coral;
 .log-form-group {
 width: 40%;
 }
-h2 {
+h2.title-on-index {
 font-family: 'Pacifico', cursive;
 text-align: center;
-color: azure;
+color: azure;  
 font-size: 50px;
 }
-h2.title-on-index {
-    margin-top: 50px;
+#cover {
+text-align: center;
+display: flex;
+align-items: center;
 }
+/* this controls the opactiy logo images in the center */
+div.col-md {
+width: 20%;
+padding: 1px;
+opacity: .8;
+}
+div#loadedhp.container.hidden {
+    display: none;
+}
+div#newdatadisplay {
+    display: none;
+}
+div#newdatadisplay.active {
+    display: block; 
+}
+
+
 

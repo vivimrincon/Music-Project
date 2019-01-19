@@ -1,4 +1,5 @@
 // Spotify API
+// Client Credentials Flow
 $(document).ready(function(){
 
     var log = console.log;
@@ -8,21 +9,76 @@ $(document).ready(function(){
         
         const value = $('#searchbar').val().trim();
         log('value', value);
-        var queryURL = "https://api.spotify.com/v1/search?q=" + value + "&type=track";
+        var spotURL = "https://api.spotify.com/v1/search?q=" + value + "&type=artist&limit=5";
         
         $.ajax({
-            url: queryURL,
+            url: spotURL,
             method: "GET",
-            header: {
-                autorization: 'Bearer ' + TOKEN
-            } 
+            headers: {
+                Authorization: 'Bearer ' + TOKEN
+            },
+
         })
         .then(function(rdata){
             log('Data', rdata);
+            // hides the albums on the homepage if the user searches for an artist in the search bar.
+            $('#loadedhp').addClass('hidden');
+            $('#newdatadisplay').addClass('active');
+            const firstracks = rdata.artists.items[0];
+            log('1track', firstracks);
+            var albumlogo = firstracks.images[1].url;
+            var imgheight = firstracks.images[1].height;
+            var imgwidth = firstracks.images[1].width;
+            var artistname = firstracks.name;
+            $('#newdataimgdisplay img:first-child').attr("src", albumlogo);
+            $('#newdataimgdisplay img:first-child').attr("height", imgheight);
+            $('#newdataimgdisplay img:first-child').attr("width", imgwidth);
+            $('#newdataimgdisplay img:first-child').attr("alt", artistname);
+            $('#headername').text(artistname);
+            log('artisitname',artistname);
+            log('img1',albumlogo);
             
         })
         .catch(function(error){
             log('Error', error);
-        });
+        })
     });
 });
+
+
+// $(document).ready(function(){
+//     $.ajax({
+//         url: "https://accounts.spotify.com/authorize",
+//         method: "GET",
+//         grant_type: TOKEN,
+//         client_id: CLIENTID,
+//         response_type: 'code',
+//         redirect_uri: URI,
+//         show_dialog: true,
+//     })
+// });
+
+// $(document).ready(function(){
+//     $('#searchimg').on('click',function(){
+//         $.ajax({
+//             url: "https://accounts.spotify.com/api/token",
+//             method: "POST",
+//             header: {
+//                 'Authorization': Basic <base64 encoded CLIENTID:CLIENTSECRET>
+//             },
+//             body: {
+//                 grant_type: client_credentials,
+//             },
+//         })
+//     })
+// });
+
+// //Bandcamp API
+// $(document).ready(function(){
+
+//     $('#searchimg').on('click',function(){
+//         const source = $(this).val();
+//         log('source',source);
+//         var bandURL = 
+//     })
+// })
