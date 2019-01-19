@@ -42,7 +42,7 @@ $(document).ready(function(){
 
             $('#headername').text(artistname);
 
-            $('audio#myAudio source:first-child').attr("src", audio);
+            $('audio#myAudio source').attr("src", audio);
 
             log('artisitname',artistname);
             log('img1',albumlogo);
