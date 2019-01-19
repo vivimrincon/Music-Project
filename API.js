@@ -15,7 +15,7 @@ $(document).ready(function(){
             url: spotURL,
             method: "GET",
             headers: {
-                Authorization: 'Bearer ' + 'BQA_oUbPqHxUqVm5Ha5mWus3ghpHdJ2nvgSUk1paaD32AwVZbKSb6qja53pTXzDYvwnRvtqNtBy_3C6MSg9HBAbyM4Q2MH3-itgdOlQ-seVeboINLC5g74u-7O0PE4dgM83BGBQprmi_C5ecgFliLKbccw'
+                Authorization: 'Bearer ' + 'BQCSqosRobpiiuAV_KVn9NpCFczOM4X8C3N8_H8QHBythtFqwAjLOA2rrRaLkmZaINmCMkao49ApQWQIbPl3SUOYU7XxBrc68uPoEsrsai0kOzNPyjnSF0mEaeY6o67Lzo-ro3vEJi3KbXydPhHR-YEueKxhktAmpCBZCee6dxhySZQjeBHd_I0'
             },
 
         })
