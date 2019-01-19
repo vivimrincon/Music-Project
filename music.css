@@ -1,39 +1,43 @@
-p { 
+body { 
+max-width: 100%;
+max-height: 100%;
 font-family: 'Pacifico', cursive;
 text-align: center;
 color: azure;
-font-size: 100px;  
+font-size: 20px;
 }
 .loginP {
 color: coral;
 }
 .log-form-group {
-width: 50%;
-}
-h2 {
-font-family: 'Pacifico', cursive;
-text-align: center;
-color: azure;
-font-size: 100px;
+width: 40%;
 }
 h2.title-on-index {
-    margin-top: 100px;
+font-family: 'Pacifico', cursive;
+text-align: center;
+color: azure;  
+font-size: 50px;
 }
-
 #cover {
-  text-align: center;
-  display: flex;
-  align-items: center;
+text-align: center;
+display: flex;
+align-items: center;
 }
-
-.column {
-    float: right;
-    width: 50%;
-    padding: 3px;
-    text-align: center;
-    opacity: .7;
-    
-  }
+/* this controls the opactiy logo images in the center */
+div.col-md {
+width: 20%;
+padding: 1px;
+opacity: .8;
+}
+div#loadedhp.container.hidden {
+    display: none;
+}
+div#newdatadisplay {
+    display: none;
+}
+div#newdatadisplay.active {
+    display: block; 
+}
 
 
 

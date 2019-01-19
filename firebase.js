@@ -9,5 +9,5 @@
    };
    firebase.initializeApp(config);
 
-   var dataRef = firebase.database;
-       var auth = firebase.auth;
+var dataRef = firebase.database;
+var auth = firebase.auth;

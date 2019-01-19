@@ -12,7 +12,7 @@ $(document).ready(function () {
       var errorCode = error.code;
       var errorMessage = error.message;
       // ...
-      console.log(error.message);
+
       modal();
       $('#exampleModalLabel').html(error.message);
     });
@@ -30,4 +30,11 @@ $(document).ready(function () {
     });
     $('form').get(0).reset();
   });
+
+  $('form').get(0).reset();
+
+  function modal() {
+    $("#exampleModal").modal("show")
+  }
+ 
 });
