@@ -15,7 +15,7 @@ $(document).ready(function(){
             url: spotURL,
             method: "GET",
             headers: {
-                Authorization: 'Bearer ' + TOKEN
+                Authorization: 'Bearer ' + 'BQA_oUbPqHxUqVm5Ha5mWus3ghpHdJ2nvgSUk1paaD32AwVZbKSb6qja53pTXzDYvwnRvtqNtBy_3C6MSg9HBAbyM4Q2MH3-itgdOlQ-seVeboINLC5g74u-7O0PE4dgM83BGBQprmi_C5ecgFliLKbccw'
             },
 
         })
