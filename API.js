@@ -9,7 +9,7 @@ $(document).ready(function(){
         
         const value = $('#searchbar').val().trim();
         log('value', value);
-        var spotURL = "https://api.spotify.com/v1/search?q=" + value + "&type=artist&limit=5";
+        var spotURL = "https://api.spotify.com/v1/search?q=" + value + "&type=track%2Cartist&limit=5";
         
         $.ajax({
             url: spotURL,
@@ -24,19 +24,29 @@ $(document).ready(function(){
             // hides the albums on the homepage if the user searches for an artist in the search bar.
             $('#loadedhp').addClass('hidden');
             $('#newdatadisplay').addClass('active');
-            const firstracks = rdata.artists.items[0];
-            log('1track', firstracks);
-            var albumlogo = firstracks.images[1].url;
-            var imgheight = firstracks.images[1].height;
-            var imgwidth = firstracks.images[1].width;
-            var artistname = firstracks.name;
+            const firstartist = rdata.artists.items[0]; //data.artist
+            const firsttrack = rdata.tracks.items[0] //data.track
+            log('1track', firstartist);
+            var albumlogo = firstartist.images[1].url;
+            var imgheight = firstartist.images[1].height;
+            var imgwidth = firstartist.images[1].width;
+
+            var artistname = firstartist.name;
+
+            var audio = firsttrack.preview_url;
+
             $('#newdataimgdisplay img:first-child').attr("src", albumlogo);
             $('#newdataimgdisplay img:first-child').attr("height", imgheight);
             $('#newdataimgdisplay img:first-child').attr("width", imgwidth);
             $('#newdataimgdisplay img:first-child').attr("alt", artistname);
+
             $('#headername').text(artistname);
+
+            $('audio#myAudio source:first-child').attr("src", audio);
+
             log('artisitname',artistname);
             log('img1',albumlogo);
+            log('musictrack',firsttrack);
             
         })
         .catch(function(error){
