@@ -6,7 +6,7 @@ In this project, our team created a music app that pulls lyrics on request and p
 * [CSS](https://www.w3schools.com/css/default.asp) -Markup layout design
 * [Javascript](https://www.w3schools.com/js/default.asp) -Dynamic behavior
 * [Bootstrap](https://getbootstrap.com/) -Responsive Design
-* [jQuery](https://jquery.com/) -Javacript library
+* [jQuery](https://jquery.com/) -Javascript library
 * [Firebase](https://firebase.google.com/) -BaaS
 * [API]() - Public APIs
 
